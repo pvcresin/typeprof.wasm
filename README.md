@@ -33,3 +33,17 @@ $ npm run dev
 ```
 $ npm run build
 ```
+
+## How to run E2E tests
+
+The end-to-end tests build the production bundle, serve it locally, and drive a
+real browser to verify that ruby.wasm boots and TypeProf reports type errors.
+
+```
+$ npm install
+$ npx playwright install chromium
+$ npm run test:e2e
+```
+
+The tests use the committed `public/ruby.wasm`, so no preview/dev setup is
+required. They also run on CI via `.github/workflows/e2e.yml`.

@@ -5,3 +5,6 @@ vscode-rbs-syntax
 wasm-build/build
 wasm-build/rubies
 wasm-build/ruby.wasm
+
+# Playwright
+test-results
